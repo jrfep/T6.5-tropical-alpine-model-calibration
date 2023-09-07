@@ -1,0 +1,42 @@
+---
+title: "Interactive histogram of predictions"
+format: html
+server: shiny
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| context: setup
+#| include: false
+ here::i_am("review-RF-output/rf-models-and-predictions.qmd")
+  source(here::here("env","project-env.R"))
+output.dir <- sprintf("%s/rf-output",work.dir)
+
+```
+
+
+
+```{r}
+vars <- c("T6.1","T6.5","T1.3","T3.1")
+regs <- c("GMBA_V2_L03-Atlantic-Plateau-Brazil-","GMBA_V2_L03-Hawaian-Islands")
+selectInput('xfile', 'Select the region of interest', regs)
+selectInput('ycol', 'and select the EFG code', vars)
+plotOutput("distPlot")
+```
+
+```{r}
+#| context: server
+
+selectedData <- reactive({
+  (load(sprintf("%s/%s/rf-pred-current.rda" , output.dir, input$xfile)))
+    prds[, input$ycol]
+  })
+
+output$distPlot <- renderPlot({
+  x <- selectedData()  # focus on the selected EFG
+  hist(x, col = 'darkgray', border = 'white', 
+       main = sprintf("Histogram of %s", input$ycol))
+})
+```

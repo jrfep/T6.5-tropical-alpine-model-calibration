@@ -1,0 +1,104 @@
+---
+title: "Review model outputs for tropical mountains"
+author: JR Ferrer-Paris
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+Load programming environment variables
+```{r}
+ here::i_am("review-RF-output/rf-models-and-predictions.qmd")
+  source(here::here("env","project-env.R"))
+input.dir <- sprintf("%s/rf-input",work.dir)
+output.dir <- sprintf("%s/rf-output",work.dir)
+```
+
+Load libraries
+```{r}
+require(dplyr)
+require(sf)
+require(raster)
+library(caret)
+library(stringr)
+library(DT)
+```
+
+Load point records used to fit the model(s)
+
+```{r}
+records_file <- sprintf("%s/EFG-records-GMBA.rds",input.dir)
+EFG_records <- readRDS(file=records_file) %>% st_drop_geometry()
+all_units <- EFG_records %>% pull(GMBA_group) %>% unique()
+```
+
+Load the GMBA mountain inventory
+
+```{r}
+
+GMBA <- read_sf(sprintf("%s/GMBA_inventory_valid.gpkg", input.dir)) %>%
+  filter(MapUnit %in% "Basic") 
+
+```
+
+Read existing files:
+```{r}
+completed_models <- 
+  list.files(output.dir, 
+           pattern = "rf-model-current.rda", 
+           recursive = TRUE)
+```
+
+
+
+```{r}
+GMBA_list <- 
+  GMBA %>% 
+    st_drop_geometry() %>% 
+    filter(Level_03 %in% all_units) %>% 
+    distinct(Level_01, Level_02, Level_03) %>%
+    arrange_all() %>% 
+    mutate(file_path=sprintf("GMBA_V2_L03-%s/rf-model-current.rda", 
+                           str_replace_all(Level_03, "[ \\(\\)*\\/]+", "-")))
+```
+
+```{r}
+completed_list <- GMBA_list %>% 
+  filter(file_path %in% completed_models) %>% 
+  dplyr::select(1:3)
+
+datatable(completed_list)
+```
+
+
+We can use these tables to search for specific documentation for each mountain system:
+
+```{r}
+GMBA %>% 
+  st_drop_geometry() %>% 
+  filter(Level_03 %in% completed_list$Level_03) %>% 
+  dplyr::select(GMBA_V2_ID, Level_01, Level_02, Level_03, MapName, WikiDataUR, Elev_High) %>%
+  arrange(Level_01, Level_02, Level_03) %>%
+  datatable()
+  
+```
+
+For example, filtering to the Hawaian Islands, we found Haleakala as the first entry, we visited the corresponding wikidata site https://www.wikidata.org/wiki/Q515719, followed to the english wikipedia article for some brief overview. Then we searched google scholar with the search term "vegetation of Haleakalā" and found two entries (among many other):
+
+- Mueller-Dombois, Dieter & Kitayama, K.. (1994). An altitudinal transect analysis of the windward vegetation on Haleakala, a Hawaiian island mountain: (2) vegetation zonation. Phytocoenologia. 24. 10.1127/phyto/24/1994/111. 
+- Maaike Y. Bader, Max Rietkerk & Arnold K. Bregt (2007) Vegetation Structure and Temperature Regimes of Tropical Alpine Treelines, Arctic, Antarctic, and Alpine Research, 39:3, 353-364, DOI: 10.1657/1523-0430(06-055)[BADER]2.0.CO;2
+
+We should prioritise some areas, for example start with Africa and then Asia. Focus on the best range (max elevations near 3000 to 5000)
+
+Searching for "vegetation of Uluguru Mountains" in google scholar we found:
+
+Burgess, N., Doggart, N., & Lovett, J. (2002). The Uluguru Mountains of eastern Tanzania: The effect of forest loss on biodiversity. Oryx, 36(2), 140-152. doi:10.1017/S0030605302000212
+
+
+```{r}
+EFG_records %>% 
+  filter(GMBA_group %in% "Eastern Arc Mountains") %>% 
+  group_by(source,EFG) %>% 
+  summarise(records=n(), .groups = "drop")
+```
+

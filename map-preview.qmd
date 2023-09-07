@@ -1,0 +1,119 @@
+---
+title: "Review maps for tropical mountains"
+author: JR Ferrer-Paris
+output: html_document
+server: shiny
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| context: setup
+#| include: false
+ here::i_am("review-RF-output/rf-models-and-predictions.qmd")
+  source(here::here("env","project-env.R"))
+input.dir <- sprintf("%s/rf-input",work.dir)
+output.dir <- sprintf("%s/rf-output",work.dir)
+rdata.dir <- sprintf("%s/Rdata",work.dir)
+require(dplyr)
+library(tidyr)
+library(ggplot2)
+require(sf)
+library(mapview)
+library(leaflet)
+library(stringr)
+library(DT)
+
+records_file <- sprintf("%s/EFG-records-GMBA.rds",input.dir)
+EFG_records <- readRDS(file=records_file) 
+GMBA <- read_sf(sprintf("%s/GMBA_inventory_valid.gpkg", input.dir)) %>%
+  filter(MapUnit %in% "Basic") %>%
+  filter(Level_01 %in% "Africa",Level_03 %in% EFG_records$GMBA_group) 
+```
+
+# Mountains of Africa
+Select the region of interest in order to update the map, table and plots.
+```{r}
+regs <- c("Southern Rift Mountains", "Atlantic Plateau (Brazil)", "Hawaian Islands")
+regs <- GMBA %>% st_drop_geometry() %>% distinct(Level_03) %>% pull
+selectInput('xreg', 'Select the region of interest', regs)
+```
+
+## Map
+Mountain range polygons from GMBA, and preliminary occurrence records from selected sources.
+
+```{r}
+leafletOutput("mapPlot")
+```
+
+## Predicted probabilities
+
+Based on a preliminary ***Random Forest*** classification algorithm.
+
+```{r}
+plotOutput("histPlot")
+```
+
+
+## Table
+
+Names and links from the GMBA mountain inventory.
+
+```{r}
+dataTableOutput("filteredTable")
+```
+
+```{r}
+#| context: server
+
+selectedPred <- reactive({
+  pred_file <- sprintf("%s/rf-pred-current-GMBA_V2_L03-%s.rda", 
+          rdata.dir,
+          str_replace_all(input$xreg, "[ \\(\\)*\\/]+", "-"))
+  load(pred_file)
+  prds <- prds[,colSums(prds == 0) < nrow(prds)] 
+  valid_cols <- c("T1.3","T2.1", "T3.1","T6.1", "T6.4", "T6.5")
+  prds %>% 
+    pivot_longer(cols = any_of(valid_cols), names_to = "EFG") %>%
+    filter(value>0)
+  })
+
+selectedMapView <- reactive({
+  EFG_slc <- filter(EFG_records, GMBA_group %in% input$xreg)
+  GMBA_slc <- filter(GMBA, Level_03 %in% input$xreg) %>% 
+            dplyr::select(MapName, Elev_High)
+  m <- mapview(EFG_slc, zcol = "EFG") +
+  mapview(GMBA_slc, zcol = "MapName")
+  })
+
+selectedTable <- reactive({
+  GMBA %>% 
+  st_drop_geometry() %>% 
+  filter(Level_03 %in% input$xreg) %>% 
+  transmute(Level_01, Level_02, Level_03, 
+            Name = if_else(!is.na(WikiDataUR),
+                           sprintf("<a href='%s' target='out'>%s</a>", 
+                                   WikiDataUR, MapName),
+                           MapName),
+            Elev_High) %>%
+  arrange(Level_01, Level_02, Level_03)
+  })
+
+output$mapPlot <- renderLeaflet({
+  selectedMapView()@map
+})
+
+output$filteredTable <- renderDataTable({
+  DT::datatable(selectedTable(), rownames = FALSE, escape = FALSE)
+})
+
+
+output$histPlot <- renderPlot({
+  ggplot(data = selectedPred(), 
+         aes(x=value,fill=EFG)) + 
+    geom_histogram(bins=25) + 
+    facet_wrap(~EFG, scales="free")
+})
+```
+
