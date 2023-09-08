@@ -1,9 +1,16 @@
 export MIHOST=$(hostname -s)
 
-export PROJECTNAME=T6.5-tropical-alpine
-export SCRIPTDIR=$HOME/proyectos/IUCN-GET-EFG/$PROJECTNAME
+export PROJECTNAME=T6.5-tropical-alpine-model-calibration
+export SCRIPTDIR=$HOME/proyectos/Tropical-Alpine/$PROJECTNAME
 
 case $MIHOST in
+L-T14N5WR66Q)
+  export GISDATA=$HOME/gisdata
+  export GISDB=$HOME/gisdb/ecosphere
+  export GISOUT=$HOME/gisout
+  export WORKDIR=$HOME/tmp/$PROJECTNAME
+  export REFDIR=$HOME/Cloudstor/Shared/EFTglobalmaps/
+  ;;
 terra)
   export GISDATA=/opt/gisdata
   export GISDB=/opt/gisdb/ecosphere

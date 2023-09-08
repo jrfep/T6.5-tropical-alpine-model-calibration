@@ -8,10 +8,8 @@ editor_options:
 
 Load programming environment variables
 ```{r}
- here::i_am("review-RF-output/rf-models-and-predictions.qmd")
-  source(here::here("env","project-env.R"))
-input.dir <- sprintf("%s/rf-input",work.dir)
-output.dir <- sprintf("%s/rf-output",work.dir)
+here::i_am("review-RF-output/rf-models-and-predictions.qmd")
+here::here("sandbox")
 ```
 
 Load libraries

@@ -1,6 +1,6 @@
 #!R --vanilla
-projectname <- "T6.5-tropical-alpine"
-projectdir <- "proyectos/IUCN-GET-EFG"
+projectname <- "T6.5-tropical-alpine-model-calibration"
+projectdir <- "proyectos/Tropical-Alpine"
 if (Sys.getenv("GISDATA") != "") {
   gis.data <- Sys.getenv("GISDATA")
   gis.out <- Sys.getenv("GISOUT")
@@ -19,6 +19,10 @@ if (Sys.getenv("GISDATA") != "") {
          roraima.local={
            gis.data <- sprintf("%s/gisdata/",Sys.getenv("HOME"))
            work.dir <- sprintf("%s/tmp/%s",Sys.getenv("HOME"),projectname)
+         },
+         L-T14N5WR66Q.local={
+           gis.data <- sprintf("%s/gisdata/",Sys.getenv("HOME"))
+           work.dir <- sprintf("%s/sandbox/",script.dir)
          },
          {
            if (file.exists("/srv/scratch/cesdata")) {
