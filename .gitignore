@@ -1,6 +1,11 @@
 # a place for test
 sandbox
 
+## just keep scripts in data
+data/*
+!data/*sh
+!data/*R
+
 # do we need this?
 rsconnect
 
