@@ -3,6 +3,9 @@ title: "Review maps for tropical mountains"
 author: JR Ferrer-Paris
 output: html_document
 server: shiny
+format: 
+  html: 
+    theme: cerulean
 editor_options: 
   chunk_output_type: console
 ---
@@ -12,10 +15,7 @@ editor_options:
 #| context: setup
 #| include: false
  here::i_am("review-RF-output/rf-models-and-predictions.qmd")
-  source(here::here("env","project-env.R"))
-input.dir <- sprintf("%s/rf-input",work.dir)
-output.dir <- sprintf("%s/rf-output",work.dir)
-rdata.dir <- sprintf("%s/Rdata",work.dir)
+
 require(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -24,10 +24,11 @@ library(mapview)
 library(leaflet)
 library(stringr)
 library(DT)
+library(readr)
 
-records_file <- sprintf("%s/EFG-records-GMBA.rds",input.dir)
+records_file <- here::here("data","EFG-records-GMBA.rds")
 EFG_records <- readRDS(file=records_file) 
-GMBA <- read_sf(sprintf("%s/GMBA_inventory_valid.gpkg", input.dir)) %>%
+GMBA <- read_sf(here::here("data","GMBA_inventory_valid.gpkg")) %>%
   filter(MapUnit %in% "Basic") %>%
   filter(Level_01 %in% "Africa",Level_03 %in% EFG_records$GMBA_group) 
 ```
@@ -35,6 +36,7 @@ GMBA <- read_sf(sprintf("%s/GMBA_inventory_valid.gpkg", input.dir)) %>%
 # Mountains of Africa
 Select the region of interest in order to update the map, table and plots.
 ```{r}
+
 regs <- c("Southern Rift Mountains", "Atlantic Plateau (Brazil)", "Hawaian Islands")
 regs <- GMBA %>% st_drop_geometry() %>% distinct(Level_03) %>% pull
 selectInput('xreg', 'Select the region of interest', regs)
@@ -68,10 +70,11 @@ dataTableOutput("filteredTable")
 #| context: server
 
 selectedPred <- reactive({
-  pred_file <- sprintf("%s/rf-pred-current-GMBA_V2_L03-%s.rda", 
-          rdata.dir,
-          str_replace_all(input$xreg, "[ \\(\\)*\\/]+", "-"))
-  load(pred_file)
+  pred_file <- here::here("data", "rf-pred-current-CHELSA",
+                          sprintf("GMBA_V2_L03-%s-region.csv", 
+                                  str_replace_all(input$xreg, 
+                                                  "[ \\(\\)*\\/]+", "-")))
+  prds <- read_csv(pred_file, col_types = "ddddddd")
   prds <- prds[,colSums(prds == 0) < nrow(prds)] 
   valid_cols <- c("T1.3","T2.1", "T3.1","T6.1", "T6.4", "T6.5")
   prds %>% 
@@ -113,7 +116,8 @@ output$histPlot <- renderPlot({
   ggplot(data = selectedPred(), 
          aes(x=value,fill=EFG)) + 
     geom_histogram(bins=25) + 
-    facet_wrap(~EFG, scales="free")
+    facet_wrap(~EFG, scales="free") +
+    theme_dark()
 })
 ```
 
