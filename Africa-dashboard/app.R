@@ -24,8 +24,17 @@ EFG_records <- readRDS(file=records_file)
 GMBA <- read_sf(here::here("data","GMBA_inventory_valid.gpkg")) %>%
   filter(MapUnit %in% "Basic") %>%
   filter(Level_01 %in% "Africa",Level_03 %in% EFG_records$GMBA_group) 
+clrs <- c("other" = "aliceblue",
+          "T1.3" = "palegreen",
+          "T2.1" = "darkgreen",
+          "T3.1" = "maroon",
+          "T6.1" = "cyan",
+          "T6.4" = "wheat4",
+          "T6.5" = "wheat")
 
-
+clrs <- wesanderson::wes_palette("Moonrise3",n=7, type = "continuous")
+names(clrs) <- c("T6.1", "other",  "T3.1", "T1.3", "T2.1", "T6.4", "T6.5")
+clrs["other"] <- "whitesmoke"
 
 ui <- dashboardPage(
   skin = "purple",
@@ -68,18 +77,24 @@ server <- function(input, output) {
                             sprintf("GMBA_V2_L03-%s-region.csv", 
                                     str_replace_all(input$xreg, 
                                                     "[ \\(\\)*\\/]+", "-")))
-    prds <- read_csv(pred_file, col_types = "ddddddd")
-    prds <- prds[,colSums(prds == 0) < nrow(prds)] 
-    valid_cols <- c("T1.3","T2.1", "T3.1","T6.1", "T6.4", "T6.5")
-    prds %>% 
-      pivot_longer(cols = any_of(valid_cols), names_to = "EFG") %>%
-      filter(value>0)
+    prds <- read_csv(pred_file, col_types = "ddddddd") 
+    if (nrow(prds)>100)
+      prds <- prds %>% slice_sample(n=100)
+    prds <- prds %>% 
+      arrange(T6.5, T1.3, T3.1) %>%
+      mutate(id=row_number()) %>%
+      pivot_longer(cols = 1:7, names_to = "pred_EFG", values_to = "prob") %>%
+      filter(prob > 0)
+
+    return(prds)
   })
   selectedMapView <- reactive({
     EFG_slc <- filter(EFG_records, GMBA_group %in% input$xreg)
     GMBA_slc <- filter(GMBA, Level_03 %in% input$xreg) %>% 
       dplyr::select(MapName, Elev_High)
-    m <- mapview(EFG_slc, zcol = "EFG") +
+    slc_clrs <- clrs[match(unique(EFG_slc$EFG),names(clrs)) ]
+    slc_clrs <- slc_clrs[sort(names(slc_clrs))]
+    m <- mapview(EFG_slc, zcol = "EFG", col.regions = slc_clrs) +
       mapview(GMBA_slc, zcol = "MapName")
   })
   
@@ -106,12 +121,10 @@ server <- function(input, output) {
   })
   
   output$histPlot <- renderPlot({
-    
-    ggplot(data = selectedPred(), 
-           aes(x=value,fill=EFG)) + 
-      geom_histogram(bins=25) + 
-      facet_wrap(~EFG, scales="free") +
-      theme_dark()
+      ggplot(selectedPred()) + 
+      geom_bar(aes(y=prob, x=id, fill=pred_EFG), stat = "identity") +
+      scale_fill_manual(values = rev(clrs)) +
+      theme_linedraw()
   })
 }
 
