@@ -35,6 +35,7 @@ clrs <- c("other" = "aliceblue",
 clrs <- wesanderson::wes_palette("Moonrise3",n=7, type = "continuous")
 names(clrs) <- c("T6.1", "other",  "T3.1", "T1.3", "T2.1", "T6.4", "T6.5")
 clrs["other"] <- "whitesmoke"
+clrs <- clrs[sort(names(clrs))]
 
 ui <- dashboardPage(
   skin = "purple",
@@ -93,7 +94,7 @@ server <- function(input, output) {
     GMBA_slc <- filter(GMBA, Level_03 %in% input$xreg) %>% 
       dplyr::select(MapName, Elev_High)
     slc_clrs <- clrs[match(unique(EFG_slc$EFG),names(clrs)) ]
-    slc_clrs <- slc_clrs[sort(names(slc_clrs))]
+    
     m <- mapview(EFG_slc, zcol = "EFG", col.regions = slc_clrs) +
       mapview(GMBA_slc, zcol = "MapName")
   })
