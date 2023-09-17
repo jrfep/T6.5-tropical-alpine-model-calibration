@@ -21,3 +21,5 @@ untar(here::here("data","rf-pred-current-CHELSA-testing.tar.bz2"),
 
 untar(here::here("data","rf-pred-current-CHELSA-region.tar.bz2"),
       exdir = here::here("data","rf-pred-current-CHELSA"))
+untar(here::here("data","rf-spatial-pred-CHELSA.tar.bz2"),
+      exdir = here::here("data","rf-spatial-pred-CHELSA"))
