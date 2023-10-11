@@ -1,25 +1,34 @@
 '''
 Maghreb Mountains research
 5.10.23 - 
+Confirm withe JR
+- Specifics to look for (currently looking for particular climate and flora relating to Tropical alpine grasslands and herblands)
+- How much context if any is helpful (ie. found context of weather systems on either side of Atlas mountains and many references to overgrazing leading to degradation and therefore difficulty in recognising the ecosystem, potential field visit photos from 1998?)
+- How much value in photos?
+- Is my goal to find the answer or recognise the nuance?
+- Translation of papers?
+- At what point should I make a decision and move on (Yes, No or too hard to tell)
+- 
 '''
 
 '''
 steps taken:
 1. check for wiki link on app
 2. google search for background/ context
-3. google scholar searches for:
-'Western High Atlas Ecosystems'
+3. google scholar and BASE searches for:
+'Western High Atlas Ecosystems' - direct
 'Western High Atlas Ecosystem typology'
-'Western High Atlas flora and fauna'
-'high atlas mountains'
-'western high atlas climate meteorology'
+'Western High Atlas flora and fauna' - specific
+'high atlas mountains' - context/ general papers with accessory info
+'western high atlas climate meteorology' - specific
+
 
 '''
 
 '''
 Western High Atlas:
 Elevation: 4090m
-Location: Morocco
+Location: Morocco, Algeria, Tunisia
 
 Wikipedia page found for High Atlas context. (Western, Central, and Eastern High Atlas)
 Coordinates: 31°03′43″N 7°54′58″W
@@ -32,7 +41,7 @@ Climate present:
 Oceanic climate for N and S of Western (and N of Central) (why exposition rather than exposure)
 Relatively humid with occassional torrential precipitation (annual rainfall between 600mm and 1000mm)
 Existence of pine, oak and cedar forests
-Forests declining due to reduction of annual precipitation, over-exploitation of trees and sheep-goat overgrazing
+Forests declining due to reduction of annual precipitation, over-exploitation of trees and sheep/goat overgrazing
 
 Some climate info and potentially evidence of forest ecosystems? (insufficient citations so info source unclear)
 Article found looking into 'Tectonic Evolution of the Western High Atlas...', but doesn't seem like this relates to potential ecosystem classification.
@@ -40,7 +49,7 @@ Article found looking into 'Tectonic Evolution of the Western High Atlas...', bu
 Google scholar search results:
 
 Intensive cropping on irrigated terraces and raising livestock (mainly sheep and goats) are main land-use types (does this allow for some info on ecosystem typology, ie. unlikely that Rosettes as main vegetation source could support livestock?) 
-'destabilization processes have begun to disturb the equilibrium of the mountain ecosystem... degradatin of the natural vegetation'
+'destabilization processes have begun to disturb the equilibrium of the mountain ecosystem... degradation of the natural vegetation'
 JSTOR [https://doi.org/10.2307/3673021]
 
 Science Direct [https://doi.org/10.1016/j.geobios.2012.05.002]
@@ -57,4 +66,36 @@ Science Direct [https://doi.org/10.1016/S0143-6228(00)00010-2]
 Occurrence probability of extreme flood events
 (difference between equatorial and monsoonal latitudes)
 IWA Publishing [https://doi.org/10.2166/wcc.2020.069]
+
+French but about 'Atlas Cypress' plant response in the western High Atlas I believe
+Apparently endemic to western High Atlas
+[https://doi.org/10.19182/bft2018.337.a31634]
+
+Recognises that the Atlas mountains 'belong to a poorly investigated region of the Mediterranean area'
+[https://doi.org/10.3897/BDJ.11.e103849]
+
+Middle Atlas:
+Extensive Timahdit sheep grazing, (overgrazing), defines rangelands and forestlands separately, herbaceous cover is overused by high numbers of animals
+[DOI: 10.5281/zenodo.1441277]
+
 '''
+
+'''
+Central High Atlas:
+Elevation:
+Location:
+
+Summary of data collected on mammal diversity in the CHA mountains from 2003-2023
+[https://doi.org/10.48402/IMIST.PRSM/jasab-v4i2.35045]
+
+'''
+
+
+'''
+Middle Atlas: (Has Wikidata page)
+Elevation: 3356m
+Location: Morocco
+
+
+'''
+
