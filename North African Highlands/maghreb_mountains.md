@@ -1,5 +1,5 @@
-'''
-Maghreb Mountains research
+
+# Maghreb Mountains research
 (2000m +)
 
 Confirm with JR
@@ -18,10 +18,8 @@ A: pretty quickly, lots to get through and step 1 is just finding options
 - Understanding exactly where the mountains are geographically and map out where info is collected from or is that too complex?
 A: for large mountain ranges, general info is usually better, but for the smaller ones, individual peaks are valuable info
 
-'''
+## steps taken:
 
-'''
-steps taken:
 1. check for wiki link on app
 2. google search for background/ context
 3. google scholar and BASE searches for:
@@ -35,8 +33,8 @@ use names of peaks as well
 '''
 
 '''
-Western High Atlas:
-Elevation (m): 4090
+### Western High Atlas:
+**Elevation (m)**: 4090
 Location: Morocco, Algeria, Tunisia
 
 Wikipedia page found for High Atlas context. (Western, Central, and Eastern High Atlas)
