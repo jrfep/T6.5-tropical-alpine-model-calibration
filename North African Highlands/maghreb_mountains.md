@@ -285,15 +285,23 @@ Location: SW Algeria
 Wikipedia: https://en.wikipedia.org/wiki/Ksour_Range
 
 From search: "Ksour range ecosystems"
-2
 
+
+Water and soil conservation techniques at the Ain Sefra arid watershed
 [https://doi.org/10.1007/s10661-020-08842-w]
 
+Aeolian San deposit assessment
 [https://doi.org/10.21203/rs.3.rs-1234507/v1]
 
 From search: "Ksour range flora and fauna"
 
+Litho- and biostratigraphy, facies patterns and depositional sequences of Cenomanian-turonian deposits
+[https://doi.org/10.1016/j.cretres.2017.05.013]
+
 From search: "Ksour range climate"
+
+Rainfall runoff model
+[DOI: 10.2478/jwld-2018-0005]
 
 
 ## Belezma Range:
@@ -301,3 +309,36 @@ Elevation (m): 2135
 Location: Northeast Algeria
 
 Wikipedia: https://en.wikipedia.org/wiki/Belezma_Range
+
+From search: "Belezma range ecosystems"
+
+Scorpion diversity and ecological distribution
+[https://www.researchgate.net/profile/Mohamed-Alaa-Omran/publication/255978951_The_Scorpion_and_its_venom_Review_article/links/55c50f5508aea2d9bdc3977d/The-Scorpion-and-its-venom-Review-article.pdf#page=29]
+
+Projected small-scale range reductions of Cedrus atlantica forests due to climate change
+[https://doi.org/10.1007/978-3-030-01683-8_4]
+
+From search: "Belezma range flora and fauna"
+
+Factors in distribution of cedar forests
+[Bulletin de la Societe d'Histoire Naturelle de l'Afrique du Nord 1949 Vol.40 No.5/6 pp.178-86
+https://www.cabdirect.org/cabdirect/abstract/19495601019]
+
+Diversity of benthic macroinvertebrates and streams quality
+[https://dx.doi.org/10.20319/lijhls.2018.41.0118
+https://d1wqtxts1xzle7.cloudfront.net/85193901/1042-libre.pdf?1651268553=&response-content-disposition=inline%3B+filename%3DDiversity_of_Benthic_Macroinvertebrates.pdf&Expires=1697955276&Signature=eOboaBXb5gmygzpuOZds9eZ4HLCgcepMlcKpF6Z8iRmUDVfUIOVkMkxXTNpoH9xKBTmCMB3kJLAkWH2LUA~vglcCCQcag~XHu2ifMzdXJKgLgP3S3C4CRIJQXHoMOoHhvhW030eIo4dNMdLgELb38cqh8yYwyHyTHeA8oRmUYgHTqqck2JFsV42Zw3U1MXaHaqi4I5jbm7mCIJvjncpLytlqt6A7hw5xHcK0aJ246RJHzSdoluD7EK665bB6Gw581uRbsUeW95x4K1pGlfTcaviNa3iQvai2gSxBuDimIc0CUw0O~q8PBIbavjeqGPZw5X0yM7wR9CPJnwyQmZmaBg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA]
+
+Study and diachronic analysis of forest cover changes
+[https://doi.org/10.5937/gp22-18806
+https://www.aseestant.ceon.rs/index.php/geopan/article/view/18806]
+
+Status of soil organic matter of cedar stands in forest mountains
+[https://www.cabdirect.org/cabdirect/abstract/20153233233]
+
+From search: "Belezma range climate"
+
+Spatio-temportal variability of precipitation
+[https://geografie-uoradea.ro/Reviste/Anale/Art/2017-1/8.AUOG_725_Tahar.pdf]
+
+
+
