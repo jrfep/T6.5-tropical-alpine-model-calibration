@@ -75,19 +75,38 @@ Small mammals
 
 From Search: "South Pare climate"
 
-
+*Nothing new*
 
 ## Nguru Mountains ##
 
 From Search: "Nguru Mountains ecosystems"
 
+Biological importance of Eastern arc mountains
+[https://doi.org/10.1016/j.biocon.2006.08.015]
+
+Tropical rainforest deforestation, biodiversity benefits and sustainable landuse
+[https://elibrary.ru/item.asp?id=6877886]
+
+Ecology and Conservation of the Land-snails of Eastern Arc
+[https://doi.org/10.2982/0012-8317(1998)87[119:EACOTL]2.0.CO;2]
+
+Delimiting tropical mountain ecoregions for conservation
+[https://doi.org/10.1017/S0376892911000191]
+
 From Search: "Nguru Mountains flora and fauna"
 
+*Sources found previously*
+
 From Search: "Nguru Mountains climate"
+
+Elevational and latitudinal changes in tree associations and diversity in Eastern Arc mountains
+[https://doi.org/10.1017/S0266467400009846]
 
 ## Rubeho Mountains ##
 
 From Search: "Rubeho Mountains ecosystems"
+
+
 
 From Search: "Rubeho Mountains flora and fauna"
 
@@ -118,4 +137,11 @@ From Search: "Taita Hills flora and fauna"
 From Search: "Taita Hills climate"
 
 ## North Pare ##
+
+From Search: "North Pare ecosystems"
+
+From Search: "North Pare flora and fauna"
+
+From Search: "North Pare climate"
+
 
