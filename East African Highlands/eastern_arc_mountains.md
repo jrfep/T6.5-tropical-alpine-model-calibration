@@ -1,6 +1,6 @@
-### Eastern Arc Mountains ###
+# Eastern Arc Mountains
 
-## Uluguru Mountains ##
+## Uluguru Mountains
 
 From Search: "Uluguru Mountains ecosystems"
 
