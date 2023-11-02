@@ -325,8 +325,8 @@ Factors in distribution of cedar forests
 https://www.cabdirect.org/cabdirect/abstract/19495601019]
 
 Diversity of benthic macroinvertebrates and streams quality
-[https://dx.doi.org/10.20319/lijhls.2018.41.0118
-https://d1wqtxts1xzle7.cloudfront.net/85193901/1042-libre.pdf?1651268553=&response-content-disposition=inline%3B+filename%3DDiversity_of_Benthic_Macroinvertebrates.pdf&Expires=1697955276&Signature=eOboaBXb5gmygzpuOZds9eZ4HLCgcepMlcKpF6Z8iRmUDVfUIOVkMkxXTNpoH9xKBTmCMB3kJLAkWH2LUA~vglcCCQcag~XHu2ifMzdXJKgLgP3S3C4CRIJQXHoMOoHhvhW030eIo4dNMdLgELb38cqh8yYwyHyTHeA8oRmUYgHTqqck2JFsV42Zw3U1MXaHaqi4I5jbm7mCIJvjncpLytlqt6A7hw5xHcK0aJ246RJHzSdoluD7EK665bB6Gw581uRbsUeW95x4K1pGlfTcaviNa3iQvai2gSxBuDimIc0CUw0O~q8PBIbavjeqGPZw5X0yM7wR9CPJnwyQmZmaBg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA]
+[https://dx.doi.org/10.20319/lijhls.2018.41.0118]
+https://d1wqtxts1xzle7.cloudfront.net/85193901/1042-libre.pdf?1651268553=&response-content-disposition=inline%3B+filename%3DDiversity_of_Benthic_Macroinvertebrates.pdf&Expires=1697955276&Signature=eOboaBXb5gmygzpuOZds9eZ4HLCgcepMlcKpF6Z8iRmUDVfUIOVkMkxXTNpoH9xKBTmCMB3kJLAkWH2LUA~vglcCCQcag~XHu2ifMzdXJKgLgP3S3C4CRIJQXHoMOoHhvhW030eIo4dNMdLgELb38cqh8yYwyHyTHeA8oRmUYgHTqqck2JFsV42Zw3U1MXaHaqi4I5jbm7mCIJvjncpLytlqt6A7hw5xHcK0aJ246RJHzSdoluD7EK665bB6Gw581uRbsUeW95x4K1pGlfTcaviNa3iQvai2gSxBuDimIc0CUw0O~q8PBIbavjeqGPZw5X0yM7wR9CPJnwyQmZmaBg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 
 Study and diachronic analysis of forest cover changes
 [https://doi.org/10.5937/gp22-18806
