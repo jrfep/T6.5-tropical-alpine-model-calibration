@@ -75,7 +75,7 @@ Small mammals
 
 From Search: "South Pare climate"
 
-*Nothing new*
+*Sources found above*
 
 ## Nguru Mountains ##
 
@@ -95,7 +95,7 @@ Delimiting tropical mountain ecoregions for conservation
 
 From Search: "Nguru Mountains flora and fauna"
 
-*Sources found previously*
+*Sources found above*
 
 From Search: "Nguru Mountains climate"
 
@@ -106,19 +106,50 @@ Elevational and latitudinal changes in tree associations and diversity in Easter
 
 From Search: "Rubeho Mountains ecosystems"
 
+How results of new field work in Rubeho Mountains influence conservation priorities
+[https://doi.org/10.1111/j.1365-2028.2006.00572.x]
 
+Forest management and conservation (across altitudinal gradient)
+[https://doi.org/10.1007/s43545-021-00292-6]
+
+Conservation implications of deforestation across elevational gradient
+[https://doi.org/10.1016/j.biocon.2009.05.028]
 
 From Search: "Rubeho Mountains flora and fauna"
 
+*Sources found above*
+
 From Search: "Rubeho Mountains climate"
+
+Evolution in tropical-montane frogs of Eastern Arc of Tanzania
+[https://doi.org/10.1111/j.1365-294X.2010.04788.x]
 
 ## West Usambara ##
 
 From Search: "West Usambara ecosystems"
 
+Drivers of soil properties and classification
+[https://doi.org/10.1016/j.geodrs.2017.10.002]
+
+Soil Fertility Survey
+[https://doi.org/10.1016/S1002-0160(06)60049-0]
+
+Tree species composition
+[https://doi.org/10.1111/j.1365-2028.2008.00931.x]
+
+Species richness and endemism
+[https://doi.org/10.1111/j.1095-8312.1982.tb02037.x]
+
+Forest use and environmental change
+[https://doi.org/10.1002/(SICI)1099-145X(199907/08)10:4%3C291::AID-LDR363%3E3.0.CO;2-W]
+
 From Search: "West Usambara flora and fauna"
 
+*Sources found above*
+
 From Search: "West Usambara climate"
+
+*Sources found above*
 
 ## Ukaguru ##
 
