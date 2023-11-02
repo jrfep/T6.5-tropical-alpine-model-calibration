@@ -74,8 +74,14 @@ Mapping of provisioning Ecosystems Services (Blocked by UNSW due to malware?)
 
 From Search: "Zomba Plateau flora and fauna"
 
+Small mammals in Pine Plantations
+[https://doi.org/10.2307/2403880]
+
+Developing greater understanding of flora of Nyika
+[https://doi.org/10.2307/3668733]
 
 From Search: "Zomba Plateau climate"
 
-
+Analysis of long-term rainfall variability, trends and groundwater availability
+[https://doi.org/10.1016/j.quaint.2005.11.006]
 
