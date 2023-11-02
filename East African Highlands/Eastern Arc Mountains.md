@@ -155,24 +155,63 @@ From Search: "West Usambara climate"
 
 From Search: "Ukaguru ecosystems"
 
+Ecology of rodent species
+[https://www.suaire.sua.ac.tz/handle/123456789/3912]
+
 From Search: "Ukaguru flora and fauna"
 
+Habitat type impacts small mammal diversity
+[https://doi.org/10.1515/mammalia-2020-0158]
+
 From Search: "Ukaguru climate"
+
+*Nothing new*
 
 ## Taita Hills ##
 
 From Search: "Taita Hills ecosystems"
 
+Local assessment of changes in water-related ecosystem services
+[https://doi.org/10.1080/21513732.2014.985256]
+
+Geographic overview
+[https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=0e567ca675bc372b81497af0ec3a26b2ddf6c0cd]
+
+Airborne remote sensing of spatiotemporal change (1955-2004)
+[https://doi.org/10.1016/j.jag.2009.02.002]
+
+Vegetation structure and composition
+[https://doi.org/10.2982/0012-8317(1998)87[181:VSACOT]2.0.CO;2]
+
 From Search: "Taita Hills flora and fauna"
 
+Biodiversity report
+[Bytebier, B. 2001. Taita Hills Biodiversity Project Report. National Museums of Kenya, Nairobi.]
+
+Tree species diversity, richness, and similarity between exotic and indigenous forests
+[https://doi.org/10.1007/s11676-010-0069-0]
+
 From Search: "Taita Hills climate"
+
+*Sources found above*
 
 ## North Pare ##
 
 From Search: "North Pare ecosystems"
 
+Human-ecosystem interactions in agricultural landscape: 1400 year sediment and pollen record
+[https://doi.org/10.1016/j.palaeo.2014.04.005]
+
+2000 years of land use and soil erosion
+[https://doi.org/10.1016/j.catena.2013.07.010]
+
 From Search: "North Pare flora and fauna"
+
+Multi-taxon approach to conservation biogeography
+[https://doi.org/10.1111/btp.12178]
 
 From Search: "North Pare climate"
 
-
+**Hugely valuable for whole area**
+Soil erosion history and past human land use
+[https://d1wqtxts1xzle7.cloudfront.net/86246456/Heckmann_2011_Soil_erosion_history_and_past_human_land_use_in_Pare-libre.pdf?1653137023=&response-content-disposition=inline%3B+filename%3DSoil_erosion_history_and_past_human_land.pdf&Expires=1698894371&Signature=Rn~camQ0W5v7Q52cWeLo8ilwd-My~VN-n2STe60ECfuL4v7ovUIPrDwkbojVYeXKv20dxMEi9ly-WJPLu9L-01xrFsCvSptTj0XGr7E5vZaLGeq2ZsxG91Un1M~TVrTr~D~ttlwvrUPlOJ3t9bUAU1-lqu4zKTaQCaDWDvG3xoDSiB2lIdNtbQ7bDF4G58d7U5LtE7uMCMTffcDZCKL8iG4CoDEzG90Oulxnb-KZhuvT4rSs1qo9I2eC5BUc092bzLCZ~1dAFFYRuswaKpUHbbzm77BEhVIFgdCZg2VuFLKX7O3a6GLf5HJi1Q~E4Y1xLhf5PFukpzx1oYk5QryIPQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA]
