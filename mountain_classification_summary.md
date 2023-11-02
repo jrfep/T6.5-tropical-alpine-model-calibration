@@ -1,16 +1,16 @@
 Mountain Classification Summary table
 
-| Region | Range | T6.5 Known | Evidence for transformation | Info on vegetation | info on soil | info on climate | Other ecosystems known |
+| Region | Range | T6.5 Known | Evidence for transformation | Info on vegetation | Info on soil | Info on climate | Other ecosystems known |
 |--------|-------|------------|-----------------------------|-------------------|--------------|-----------------|------------------------|
-| Maghreb mountains | Western High Atlas | NO | YES | NO | YES | YES |
-| Maghreb mountains | Central High Atlas | UK |  |  |  |  |  |
-| Maghreb mountains | Middle High Atlas | UK |  |  |  |  |  |
-| Maghreb mountains | Anti-Atlas | UK |  |  |  |  |  |
-| Maghreb mountains | Jebel Siroua | UK |  |  |  |  |  |
-| Maghreb mountains | Jebel Saghro | UK |  |  |  |  |  |
-| Maghreb mountains | Rif | UK |  |  |  |  |  |
-| Maghreb mountains | Aures Mountains | UK |  |  |  |  |  |
-| Maghreb mountains | Djurdjura Range | UK |  |  |  |  |  |
-| Maghreb mountains | Ksour Range | UK |  |  |  |  |  |
-| Maghreb mountains | Belezma Range | UK |  |  |  |  |  |
+| Maghreb mountains | Western High Atlas | NO | Y | Y | NO | Y | Y |
+| Maghreb mountains | Central High Atlas | NO | Y | Y | NO | Y | Y |
+| Maghreb mountains | Middle High Atlas |  | Y | Y |  |  |  |
+| Maghreb mountains | Anti-Atlas |  |  | Y |  | Y |  |
+| Maghreb mountains | Jebel Siroua |  |  | Y |  | Y |  |
+| Maghreb mountains | Jebel Saghro |  |  |  |  |  | Y |
+| Maghreb mountains | Rif |  | Y | Y | Y | Y | Y |
+| Maghreb mountains | Aures Mountains |  |  | Y |  | Y | Y |
+| Maghreb mountains | Djurdjura Range |  | Y | Y | Y |  | Y |
+| Maghreb mountains | Ksour Range |  |  |  | Y |  |  |
+| Maghreb mountains | Belezma Range |  |  |  |  |  |  |
 
