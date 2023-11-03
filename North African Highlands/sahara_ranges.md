@@ -4,7 +4,11 @@
 
 From Search: "Tibesti ecosystems"
 
+(Climate) (other ecosystems) (Transformation) Quaternary Vegetation Dynamics
+[https://library.oapen.org/bitstream/handle/20.500.12657/51389/1/9781000431148.pdf#page=46]
 
+(Climate) (vegetation) (other ecosystems) Exploration of the Tibesti Mountains
+[https://books.google.com.au/books?hl=en&lr=lang_en&id=tqU5DwAAQBAJ&oi=fnd&pg=PT24&dq=tibesti+ecosystems&ots=QixL1Ykncv&sig=M-Tg1DjOgzkGFb_WdrRdZYcXlSM#v=onepage&q=tibesti%20ecosystems&f=false]
 
 From Search: "Tibesti flora and fauna"
 
