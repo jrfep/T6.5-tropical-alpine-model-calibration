@@ -1,0 +1,29 @@
+## Convert DOI to bibtex format
+
+Install package RefManageR in Rstudio, then you can do this:
+
+```{r}
+library(RefManageR)
+bib <- ReadCrossRef(filter = list(doi = "10.1016/j.yqres.2009.02.005"), min.relevance = 0)
+toBiblatex(bib)
+```
+The output will look like this:
+
+```
+@Article{finch2009late,
+  author = {Jemma Finch and Melanie J. Leng and Rob Marchant},
+  title = {Late Quaternary vegetation dynamics in a biodiversity hotspot, the Uluguru Mountains of Tanzania},
+  date = {2009-7-01},
+  volume = {72},
+  number = {1},
+  pages = {111-122},
+  url = {http://dx.doi.org/10.1016/j.yqres.2009.02.005},
+  doi = {10.1016/j.yqres.2009.02.005},
+  issn = {0033-5894},
+  license = {unspecified},
+  score = {0},
+  journaltitle = {Quaternary Research},
+}
+```
+
+ 
