@@ -89,7 +89,7 @@ Climate, Environmental change, and resources
 
 From Search: "Hoggar Mountains (nn) flora and fauna"
 
-(Vegetation) Botanical and chemical aspects of olive tree
+(Vegetation) (Other ecosystems) Botanical and chemical aspects of olive tree
 [https://doi.org/10.1111/j.1439-0418.1984.tb02694.x]
 
 From Search: "Hoggar Mountains (nn) climate"
