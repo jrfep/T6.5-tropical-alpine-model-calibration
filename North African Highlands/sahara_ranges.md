@@ -81,49 +81,73 @@ Trends of climate with rapid change
 
 From Search: "Hoggar Mountains (nn) ecosystems"
 
+Climate, Environmental change, and resources
+[https://doi.org/10.2307/3673683]
 
+(Vegetation )Statistical Relationships between Floristic composition and mean climatic conditions
+[https://doi.org/10.2307/3038091]
 
 From Search: "Hoggar Mountains (nn) flora and fauna"
 
-
+(Vegetation) Botanical and chemical aspects of olive tree
+[https://doi.org/10.1111/j.1439-0418.1984.tb02694.x]
 
 From Search: "Hoggar Mountains (nn) climate"
 
+*Sources found above*
 
 ## Teffedest Mountains
 
 From Search: "Teffedest Mountains ecosystems"
 
-
+(Vegetation) Analysis of Flora
+[https://doi.org/10.2307/2398860]
 
 From Search: "Teffedest Mountains flora and fauna"
 
-
+(Vegetation) (Climate) Outline of biological history of Sahara
+[https://doi.org/10.1016/S0140-1963(18)30653-0]
 
 From Search: "Teffedest Mountains climate"
 
+*Sources found above*
 
 ## Itbay
 
 From Search: "Itbay ecosystems"
 
-
+*No sources found*
 
 From Search: "Itbay flora and fauna"
 
-
+*No sources found*
 
 From Search: "Itbay climate"
 
+*No sources found*
 
 ## Tassili n'Ajjer
 
 From Search: "Tassili n'Ajjer ecosystems"
 
+(Vegetation) Floristic and ecological characterisation
+[https://www.jle.com/fr/revues/sec/e-docs/le_cypres_du_tassili_caracterisation_floristique_et_ecologique_265221/article.phtml]
+[Salima Benhouhou, Nacera Boucheneb, Fatiha Sahli, Idrissa Yaou Adamou . Le cyprès du Tassili : caractérisation floristique et écologique. Science et changements planétaires / Sécheresse. 2005;16(1):61-66.]
 
+Holocene flora and vegetation
+[https://doi.org/10.1007/978-3-319-89839-1_8]
 
 From Search: "Tassili n'Ajjer flora and fauna"
 
+(Vegetation) Odonata
+[Dumont H. J. 2017. De libellen (Odonata) van de Tassili-n-Ajjer, Algerije. Brachytron 19(1):
+44-49.]
+[https://www.brachytron.nl/wp-content/uploads/2019/10/Brachytron-19-1-Dumont-44-49.pdf]
 
+Holocene vegetation
+[https://doi.org/10.1177/095968369600600408]
 
 From Search: "Tassili n'Ajjer climate"
+
+(Vegetation) (climate) Cupressus dupreziana distribution, decline and regeneration
+[https://doi.org/10.1016/S1631-0691(02)01433-6]
