@@ -1,0 +1,70 @@
+---
+title: "Example report"
+author: "A. Student"
+date: "08 Nov 2023"
+format: html
+bibliography: 
+  - bibTeX/references.bib
+nocite: |
+  @*
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. 
+
+## Use sections and subsections wisely
+
+They help to organise the content and you can use the Outline to navigate the document.
+
+## Load packages
+
+Load the libraries or packages that you need at the beginning of the document. We use some options to supress the output of these lines of code.
+
+```{r}
+#| echo: false
+#| message: false
+library(dplyr)
+library(readr)
+library(DT)
+```
+
+
+## Read table
+
+You can read the `csv` files in R and then show them as tables:
+
+```{r}
+mountain_classification <- read_csv("tables/mountain classification summary.csv", show_col_types = FALSE)
+datatable(mountain_classification,
+          caption = 'Table 1: This is a simple caption for the table.',
+          options = list(pageLength = 15, autoWidth = TRUE))
+```
+
+And we can group and summarise the data:
+
+```{r}
+mountain_classification %>% 
+  group_by(Region) %>%
+  summarise(`Nr of ranges` = n_distinct(Range)) %>%
+  datatable(caption = 'Table 2: Summary of ranges reviewed.',
+          options = list(dom = "t"))
+```
+
+
+We can populate another table with the list of references and we can do similar summaries of nr of references per mountain range:
+
+```{r}
+mountain_references <- read_csv("tables/references-per-mountain.csv", show_col_types = FALSE)
+datatable(mountain_references)
+```
+
+
+## List of references
+
+This document includes a link to a bibliography file in the front matter and will add a section called `References` at the end of the document with all entries included in the bibliography file. 
+
+It is also possible to cite specific references using the reference key [@finch2009late].
+
