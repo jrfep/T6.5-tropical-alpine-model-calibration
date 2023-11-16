@@ -1,37 +1,36 @@
 Region,Range,T6.5 Known,Evidence of transformation,Info on vegetation,Info on soil,Info on climate,Other ecosystems known
 Maghreb mountains,Western High Atlas,N,Y,Y,N,Y,Y
 Maghreb mountains,Central High Atlas,N,Y,Y,N,Y,Y
-Maghreb mountains,Middle High Atlas,,Y,Y,Y,Y,
-Maghreb mountains,Anti-Atlas,,,Y,Y,Y,Y
-Maghreb mountains,Jebel Siroua,,,Y,,Y,
-Maghreb mountains,Jebel Saghro,,,,,,Y
-Maghreb mountains,Rif,,Y,Y,Y,Y,Y
-Maghreb mountains,Aures Mountains,,,Y,,Y,Y
-Maghreb mountains,Djurdjura Range,,Y,Y,Y,,Y
-Maghreb mountains,Ksour Range,,Y,,Y,,
-Maghreb mountains,Belezma Range,,,Y,Y,Y,Y
-Plateau of Mozambique,Mulanje Massif,,Y,Y,Y,Y,Y
-Plateau of Mozambique,Namuli Massif,Y,Y,Y,,Y,Y
-Plateau of Mozambique,Zomba Plateau,,,Y,,Y,Y
-Eastern Arc Mountains,Uluguru Mountains,,Y,Y,Y,Y,Y
-Eastern Arc Mountains,Udzungwa,,Y,Y,Y,,Y
-Eastern Arc Mountains,South Pare,,Y,Y,,Y,Y
-Eastern Arc Mountains,Nguru Mountains,,Y,Y,,Y,Y
-Eastern Arc Mountains,Rubeho Mountains,,Y,Y,,,Y
-Eastern Arc Mountains,West Usambara,,Y,Y,Y,,Y
-Eastern Arc Mountains,Ukaguru,,Y,Y,Y,,Y
-Eastern Arc Mountains,Taita Hills,,Y,Y,Y,,Y
-Eastern Arc Mountains,North Pare,,Y,Y,Y,Y,Y
-Central Plateau (Southern Africa),Highveld (nn),,Y,Y,Y,Y,Y
-Central Plateau (Southern Africa),Great Karas Mountains,,Y,Y,Y,,Y
+Maghreb mountains,Middle High Atlas,N,Y,Y,Y,Y,N
+Maghreb mountains,Anti-Atlas,N,N,Y,Y,Y,Y
+Maghreb mountains,Jebel Siroua,N,N,Y,N,Y,N
+Maghreb mountains,Jebel Saghro,N,N,N,N,N,Y
+Maghreb mountains,Rif,N,Y,Y,Y,Y,Y
+Maghreb mountains,Aures Mountains,N,N,Y,N,Y,Y
+Maghreb mountains,Djurdjura Range,N,Y,Y,Y,N,Y
+Maghreb mountains,Ksour Range,N,Y,N,Y,N,N
+Maghreb mountains,Belezma Range,N,N,Y,Y,Y,Y
+Plateau of Mozambique,Mulanje Massif,N,Y,Y,Y,Y,Y
+Plateau of Mozambique,Namuli Massif,Y,Y,Y,N,Y,Y
+Plateau of Mozambique,Zomba Plateau,N,N,Y,N,Y,Y
+Eastern Arc Mountains,Uluguru Mountains,N,Y,Y,Y,Y,Y
+Eastern Arc Mountains,Udzungwa,N,Y,Y,Y,N,Y
+Eastern Arc Mountains,South Pare,N,Y,Y,N,Y,Y
+Eastern Arc Mountains,Nguru Mountains,N,Y,Y,N,Y,Y
+Eastern Arc Mountains,Rubeho Mountains,N,Y,Y,N,N,Y
+Eastern Arc Mountains,West Usambara,N,Y,Y,Y,N,Y
+Eastern Arc Mountains,Ukaguru,N,Y,Y,Y,N,Y
+Eastern Arc Mountains,Taita Hills,N,Y,Y,Y,N,Y
+Eastern Arc Mountains,North Pare,N,Y,Y,Y,Y,Y
+Central Plateau (Southern Africa),Highveld (nn),N,Y,Y,Y,Y,Y
+Central Plateau (Southern Africa),Great Karas Mountains,N,Y,Y,Y,N,Y
 Central Plateau (Southern Africa),Groot Waterberg,N,N,N,N,N,N
 Central Plateau (Southern Africa),Waterberg,N,N,N,N,N,Y
-Central Plateau (Southern Africa),Blouberg,,Y,Y,,Y,Y
-Sahara Ranges,Tibesti,,Y,Y,Y,,Y
-Sahara Ranges,Atakor,,,Y,,Y,Y
-Sahara Ranges,Sinai Peninsula,,,Y,Y,Y,Y
-Sahara Ranges,Hoggar Mountains,,Y,Y,,Y,Y
-Sahara Ranges,Teffedest Mountains,,,Y,,Y,
+Central Plateau (Southern Africa),Blouberg,N,Y,Y,N,Y,Y
+Sahara Ranges,Tibesti,N,Y,Y,Y,N,Y
+Sahara Ranges,Atakor,N,N,Y,N,Y,Y
+Sahara Ranges,Sinai Peninsula,N,N,Y,Y,Y,Y
+Sahara Ranges,Hoggar Mountains,N,Y,Y,,Y,Y
+Sahara Ranges,Teffedest Mountains,N,N,Y,N,Y,N
 Sahara Ranges,Itbay,N,N,N,N,N,N
-Sahara Ranges,Tassili n'Ajjer,,,Y,,Y,
-
+Sahara Ranges,Tassili n'Ajjer,N,N,Y,N,Y,N
