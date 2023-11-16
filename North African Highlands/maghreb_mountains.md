@@ -10,7 +10,6 @@
 3. google scholar and BASE searches for:
 'high atlas mountains' - context/ general papers with accessory info
 'Western High Atlas Ecosystems' - direct
-'Western High Atlas Ecosystem typology'
 'Western High Atlas flora and fauna' - specific
 'western high atlas climate' - specific
 use names of peaks as well
@@ -38,15 +37,17 @@ Forests declining due to reduction of annual precipitation, over-exploitation of
 Some climate info and potentially evidence of forest ecosystems? (insufficient citations so info source unclear)
 Article found looking into 'Tectonic Evolution of the Western High Atlas...', but doesn't seem like this relates to potential ecosystem classification.
 
-Google scholar search results:
+From search: "Western High Atlas ecosystems"
 
 Intensive cropping on irrigated terraces and raising livestock (mainly sheep and goats) are main land-use types (does this 
 allow for some info on ecosystem typology, ie. unlikely that Rosettes as main vegetation source could support livestock?) 
 'destabilization processes have begun to disturb the equilibrium of the mountain ecosystem... degradation of the natural 
 vegetation'
-JSTOR [https://doi.org/10.2307/3673021]
+Land use and equilibrium of mountain ecosystems
+[https://doi.org/10.2307/3673021]
 
-Science Direct [https://doi.org/10.1016/j.geobios.2012.05.002]
+Ecological succession evidence
+[https://doi.org/10.1016/j.geobios.2012.05.002]
 
 
 Irrigated terrace agriculture , sheep and goat grazing present
@@ -58,48 +59,73 @@ includes: domesticated olives to 1400m, oaks below 2000m, junipers between 1200 
 between 1600m and 2500m. Scattered Juniperus thurifera and stunted Q. rotundifolia grow to ~2500m and xerophytes are common 
 to 3300m. South facing slopes have trees growing 800m higher altitude than northern hillsides...
 Seems like vegetation suggests that T6.5 may be present above ~2500m
-Science Direct [https://doi.org/10.1016/S0143-6228(00)00010-2]
+Two complimentary and integrated land uses
+[https://doi.org/10.1016/S0143-6228(00)00010-2]
 
+From search: "Western High Atlas climate meteorology"
 
 Occurrence probability of extreme flood events
 (difference between equatorial and monsoonal latitudes)
-IWA Publishing [https://doi.org/10.2166/wcc.2020.069]
+[https://doi.org/10.2166/wcc.2020.069]
+
+Recognises that the Atlas mountains 'belong to a poorly investigated region of the Mediterranean area'
+Taxonomic notes and key to West Palearctic Antocha
+[https://doi.org/10.3897/BDJ.11.e103849]
+
+(JSTOR) From search: "Western High Atlas ecosystems"
 
 French but about 'Atlas Cypress' plant response in the western High Atlas I believe (translated to english in chatGPT)
 Apparently endemic to western High Atlas
 [https://doi.org/10.19182/bft2018.337.a31634]
 
-Recognises that the Atlas mountains 'belong to a poorly investigated region of the Mediterranean area'
-[https://doi.org/10.3897/BDJ.11.e103849]
-
-
-
- 
 
  
 ## Central High Atlas:
 Elevation:
 Location:
 
+From search: "Central High Atlas ecosystems"
+
 Summary of data collected on mammal diversity in the CHA mountains from 2003-2023
+Biodiversity loss and its impact on local ecosystems
 [https://doi.org/10.48402/IMIST.PRSM/jasab-v4i2.35045]
 
 Diversity of avian species, their ecosystems and climate conditions
 [http://dx.doi.org/10.31893/jabb.23004]
 
- 
+From search: "Central High Atlas flora and fauna"
 
+*Sources found above*
 
+From search: "Central High Atlas climate"
+
+*Sources found above*
  
 ## Middle Atlas: (Has Wikidata page)
 Elevation (m): 3356
 Location: Morocco
 
+From search: "Middle Atlas ecosystems"
+
+Climate change and ecosystems dynamics over last 6000 years
+[https://doi.org/10.5194/cp-12-1029-2016]
+
+Mapping forest species
+[https://doi.org/10.3390/ijgi6090275]
+
+From search: "Middle Atlas flora and fauna"
+
+*Sources found above*
+
+From search: "Middle Atlas climate"
+
+18,000-Year record of vegetation, lake-level and climatic change
+[https://doi.org/10.2307/2845311]
+
 Extensive Timahdit sheep grazing, (overgrazing), defines rangelands and forestlands separately, herbaceous cover is 
 overused by high numbers of animals
+Climate and environmental change in mediterranean basin
 [DOI: 10.5281/zenodo.1441277]
-
-
 
 
 ## Anti-Atlas:
@@ -114,12 +140,37 @@ To west and north, much of land is covered with thyme, rosemary and other drough
 In south, little but thorn shrubs remain with gradual transition to desert.
 [https://en.wikipedia.org/wiki/Anti-Atlas]
 
+From search: "Anti-Atlas"
 
-[https://www.mindat.org/loc-14174.html]
-
+Ecosystems present in photos
 [https://earthobservatory.nasa.gov/images/2178/anti-atlas-mountains-morocco]
 
+From search: "Anti-Atlas ecosystems"
 
+Land, Water and development
+[https://login.wwwproxy1.library.unsw.edu.au/login?url=https://www.proquest.com/scholarly-journals/land-water-development-high-atlas-anti-mountains/docview/1292224185/se-2?accountid=12763]
+[@article{
+author={Parish,Romola and Funnell,Don},
+year={1996},
+month={Apr 01},
+title={Land, Water and Development in the High Atlas and Anti Atlas Mountains of Morocco},
+journal={Geography : Journal of the Geographical Association},
+volume={81},
+number={2},
+pages={142},
+note={Last updated - 2013-02-22},
+keywords={Geography},
+isbn={0016-7487},
+url={https://login.wwwproxy1.library.unsw.edu.au/login?url=https://www.proquest.com/scholarly-journals/land-water-development-high-atlas-anti-mountains/docview/1292224185/se-2},
+}]
+
+From search: "Anti-Atlas flora and fauna"
+
+*No sources found*
+
+From search: "Anti-Atlas climate"
+
+*No sources found*
  
 ## Jebel Siroua (Sirwa):
 Elevation (m): 3304
@@ -127,22 +178,22 @@ Location: Morocco
 
 Lots of papers on the jebel Sirwa lineage of Moroccan day geckos
 
+From search: "Jebel Siroua"
+
 Physical geography of Morocco
 [https://doi.org/10.2307/1776756]
 
 Rough guide to morocco
 [https://books.google.com.au/books?hl=en&lr=&id=1mhFb_pA_w8C&oi=fnd&pg=PR6&dq=jebel+sirwa+climate+meteorology&ots=3b9o0diH4f&sig=9MwdoxUtY_dnMEkI24KrtqrLq0g#v=onepage&q&f=false]
 
-Possible presence of permafrost in North Africa (specifies High atlas?)
-[https://doi.org/10.5194/tc-11-1691-2017]
 
-Contribution to the knowledge on the reptile fauna of
-Jebel Sirwa (Morocco), with some insights into the
-conservation status of Vipera latastei-monticola
+From search: "Jebel Siroua ecosystems"
+
+Reptile fauna
 [http://www.herpetologica.org/BAHE/BAHE28(1)_[240]_05_Dist01.pdf]
 
-BASE had 6 articles with titles in French
-
+Possible presence of permafrost in North Africa (specifies High atlas?)
+[https://doi.org/10.5194/tc-11-1691-2017]
 
 
 ## Jebel Saghro:
