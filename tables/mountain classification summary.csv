@@ -1,8 +1,8 @@
 Region,Range,T6.5 Known,Evidence of transformation,Info on vegetation,Info on soil,Info on climate,Other ecosystems known
 Maghreb mountains,Western High Atlas,N,Y,Y,N,Y,Y
 Maghreb mountains,Central High Atlas,N,Y,Y,N,Y,Y
-Maghreb mountains,Middle High Atlas,,Y,Y,,,
-Maghreb mountains,Anti-Atlas,,,Y,,Y,
+Maghreb mountains,Middle High Atlas,,Y,Y,Y,Y,
+Maghreb mountains,Anti-Atlas,,,Y,Y,Y,Y
 Maghreb mountains,Jebel Siroua,,,Y,,Y,
 Maghreb mountains,Jebel Saghro,,,,,,Y
 Maghreb mountains,Rif,,Y,Y,Y,Y,Y
