@@ -153,7 +153,7 @@ info_perc <- mountain_classification %>%
 
 We can populate another table with the list of references and we can do similar summaries of nr of references per mountain range:
 
-```{r}
+```{r, warning=FALSE}
 mountain_references <- read_csv("tables/references-per-mountain.csv", show_col_types = FALSE)
 datatable(mountain_references, caption = 'Table 3: Full list of references')
 ```
@@ -172,7 +172,7 @@ mountain_references %>%
 
 Chart of the average number of references found per range for each region
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reference_density <- mountain_references %>%
   group_by(Region) %>%
   summarise(`Num ranges` = n_distinct(Range),
@@ -190,13 +190,13 @@ barplot(reference_density$reference_density,
 
 
 Chart of average number of references per given search term
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 search_reference_density <- mountain_references %>%
-  mutate(ecosystem_term = grepl("ecosystems",search_string),
+  mutate(climate_term = grepl("climate",search_string),
          ff_term = grepl("flora and fauna",search_string),
-         climate_term = grepl("climate",search_string)) %>%
-  group_by(ecosystem_term, ff_term, climate_term) %>%
+         ecosystem_term = grepl("ecosystems",search_string)) %>%
+  group_by(climate_term, ff_term, ecosystem_term) %>%
   summarise(`Num references` = n_distinct(comment),
             `Num search` = n_distinct(Range),
             search_reference_density = `Num references`/`Num search`)
@@ -207,7 +207,7 @@ barplot(search_reference_density$search_reference_density,
         search term",
         xlab="search term",
         ylab="Num references found",
-        names.arg=c("none","clim","ff","eco"))
+        names.arg=c("none","eco","ff","clim"))
 
 
 
