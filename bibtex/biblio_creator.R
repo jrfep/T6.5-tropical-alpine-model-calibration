@@ -7,7 +7,7 @@ library(stringr)
 ##  pull(url) %>%
 ##  str_replace("https://doi.org/","")
 ##for (x in ref_list) {
-  bib <- ReadCrossRef(filter = list(doi = x), min.relevance = 0)
+  bib <- ReadCrossRef(filter = list(doi = '10.5281/zenodo.7224821'), min.relevance = 0)
   cat((toBiblatex(bib)),file="temp_ref.bib",append = TRUE)
   cat("\n\n",file="temp_ref.bib",append=TRUE)
 ##}
