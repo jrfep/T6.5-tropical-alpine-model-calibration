@@ -11,7 +11,9 @@ nocite: |
 
 ## Abstract
 
-In this paper, a subspace of relevant locations were analysed to find the occurrence of tropical alpine grasslands and herblands. Many of the areas studied showed human transformation had occurred, meaning it is unknown whether they currently could have T6.5 present
+In this paper, a subspace of relevant mountain ranges were analysed to find the occurrence of tropical alpine grasslands and herblands (The ecosystem labelled T6.5 from the global ecosystem typology).
+Most ranges were not confirmed to have the T6.5 ecosystem present, but did have information regarding the characteristics possessed by T6.5 ecosystems, including vegetation, soil and climate characteristics.
+Many of the areas studied showed evidence of human transformation, meaning it is unknown whether they could have a T6.5 ecosystem present. Additionally, the majority of ranges show the presence of other ecosystems within the typology, not necessarily meaning there is not also an area of the range where T6.5 may be found.
 
 
 ## Introduction
@@ -20,10 +22,38 @@ In this paper, a subspace of relevant locations were analysed to find the occurr
 - shows for each grid reference of 30x30m resolution what the probability is that each ecosystem within the typology will exist
 - checking the areas most likely to have T6.5 present based on the model to find observations of whether T6.5 is present or if it has been transformed.
 
+## Methods
 
-## Load packages
 
-Load the libraries or packages that you need at the beginning of the document. We use some options to supress the output of these lines of code.
+1. A google search was made for context and general papers with accessory info
+2. Google scholar searches were made for: 
+'[mountain name] Ecosystems' 
+'[mountain name] flora and fauna' 
+'[mountain name] climate' 
+
+For example:
+'High Atlas mountains' 
+'Western High Atlas Ecosystems' 
+'Western High Atlas flora and fauna' 
+'Western High Atlas climate' 
+
+3. The information present for the range was added to the table: 'mountain classification summary', separating into categories
+
+4. Each reference was added to the table: 'references-per-mountain', specifying the region, range, and search term used to find the source
+
+## Time spent by activity
+
+Project setup: 5 hours 
+Finding context and information: 20 hours 
+Finding relevant references: 70 hours 
+Summarising information present for each range by category: 8 hours 
+Summarising references found into a table sorted by region, range and search term: 8 hours 
+Composing project report: 15 hours 
+
+
+
+## Results
+
 
 ```{r}
 #| echo: false
@@ -34,7 +64,6 @@ library(DT)
 ```
 
 
-## Read table
 
 This opening table shows the categorised information found for each mountain range, clarifying whether relevant information was found showing either the targeted or other ecosystems, as well as some characteristics of the given ecosystem (vegetation, soil and climate). Also included is information present on transformation, as ecosystem transformation is a regular occurrence, improving search efficiency.
 
@@ -45,6 +74,7 @@ datatable(mountain_classification,
           options = list(pageLength = 15, autoWidth = TRUE))
 ```
 
+
 The number of ranges found per region is shown below
 
 ```{r}
@@ -54,6 +84,7 @@ mountain_classification %>%
   datatable(caption = 'Table 2: Number of ranges found per region',
           options = list(dom = "t"))
 ```
+
 
 
 The information from table 1 has been synthesised below to show the presence of information relating each main ecosystem characteristic for each region.
@@ -87,6 +118,7 @@ info_perc <- mountain_classification %>%
 
 ```
 
+
 The graph below shows the same information as graph 1, however is formatted to highlight the differences in the number of ranges with information on each characteristic
 
 ```{r}
@@ -106,7 +138,7 @@ info_perc <- mountain_classification %>%
           ylab= "Num found",
           beside=FALSE, 
           col=rainbow(5))
-
+  
   legend(1.3333,29.0, c("Central Plateau (Southern Africa)",
                     "Eastern Arc Mountains",
                     "Maghreb Mountains",
@@ -126,6 +158,7 @@ mountain_references <- read_csv("tables/references-per-mountain.csv", show_col_t
 datatable(mountain_references, caption = 'Table 3: Full list of references')
 ```
 
+
 Summarise the number of references per region 
 
 ```{r}
@@ -137,7 +170,7 @@ mountain_references %>%
 
 
 
-Chart of average number of references found per range for each region
+Chart of the average number of references found per range for each region
 
 ```{r}
 reference_density <- mountain_references %>%
@@ -154,6 +187,7 @@ barplot(reference_density$reference_density,
         ylab="Average references per range",
         names.arg=reference_density$Region)
 ```
+
 
 Chart of average number of references per given search term
 ```{r}
@@ -180,27 +214,31 @@ barplot(search_reference_density$search_reference_density,
 ```
 
 
+
 ## Progression and learnings through the project
 
 The start of the term was spent setting up software and learning how to search
+
 - At the beginning, significant context was found and explored for each reference, added to the reference document, with understanding prioritised. Each reference took roughly 1 hour to explore fully and gather valuable knowledge from
+
 - Initially BASE, JSTOR, google scholar and CORE were used with various search terms, eventually resulting in the finding that the use of 3 search terms: "[Mountain range] Ecosystems", "[Mountain range] flora and fauna", and "[Mountain range] climate" in google scholar only was the most efficient and effective choice within the time constraints of the project.
+
 - This process became progressively efficient and clearer as search terms became familiar, recognising article value become clearer and the decision to separate steps into finding valuable sources and then later filtering those sources to find information within
+
 - standardising search terms and finding which were most valuable was very helpful
+
 - standardising format of documents with references found allowed for far more efficient use later in the project
+
 - By the end of the project sources each took about 20 minutes to confirm on average, but this was slowly reduced as the clarity for what to look for improved and familiarity improved
+
 - adding a document to summarise findings into a table was incredibly valuable (the categories to search for made deciding on article value far more efficient)
+
 - A file to include all references in a table allowed for more effective searches as well
+
 - Putting together results into a final report, including analysis and summary allowed findings to be clearly shown.
+
 - Cleaning all previous files to standardise all results shown and references found
+
 - Setting up bibliography with all references in bibtex format, most references were added using the biblio creator, however those without easily accessible dois were added with a web reference maker.
 
-
-
-
-## List of references
-
-This document includes a link to a bibliography file in the front matter and will add a section called `References` at the end of the document with all entries included in the bibliography file. 
-
-It is also possible to cite specific references using the reference key [@finch2009late].
 

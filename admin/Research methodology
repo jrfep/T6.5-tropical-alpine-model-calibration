@@ -1,21 +1,20 @@
-'''
-Research method
 
-1. check for wiki link on main app
-2. google search for background/ context
-3. google scholar and BASE searches for:
-'[mountain name] Ecosystems' - direct
-'[mountain name] Ecosystem typology'
-'[mountain name] flora and fauna' - specific
-'[range name]' - context/ general papers with accessory info
-'[mountain name] climate meteorology' - specific
+Research methodology
+
+1. google search for background/ context
+2. google scholar searches for:
+'[mountain name] Ecosystems'
+'[mountain name] flora and fauna'
+'[mountain name] climate'
 
 eg.
+'High Atlas mountains' - context/ general papers with accessory info
 'Western High Atlas Ecosystems' - direct
-'Western High Atlas Ecosystem typology'
 'Western High Atlas flora and fauna' - specific
-'high atlas mountains' - context/ general papers with accessory info
-'western high atlas climate meteorology' - specific
+'Western High Atlas climate' - specific
 
-For smaller ranges, individual peaks are used for specific searches as well.
-'''
+3. The information present for the range is added to the table: 'mountain classification summary', separating into categories
+
+4. Each reference is added to the table: references-per-mountain, specifying the region, range, and search term used to find the source
+
+
