@@ -9,15 +9,17 @@ nocite: |
   @*
 ---
 
-## Quarto
+## Abstract
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+In this paper, a subspace of relevant locations were analysed to find the occurrence of tropical alpine grasslands and herblands. Many of the areas studied showed human transformation had occurred, meaning it is unknown whether they currently could have T6.5 present
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. 
 
-## Use sections and subsections wisely
+## Introduction
 
-They help to organise the content and you can use the Outline to navigate the document.
+- model already exixts
+- shows for each grid reference of 30x30m resolution what the probability is that each ecosystem within the typology will exist
+- checking the areas most likely to have T6.5 present based on the model to find observations of whether T6.5 is present or if it has been transformed.
+
 
 ## Load packages
 
@@ -191,7 +193,7 @@ The start of the term was spent setting up software and learning how to search
 - A file to include all references in a table allowed for more effective searches as well
 - Putting together results into a final report, including analysis and summary allowed findings to be clearly shown.
 - Cleaning all previous files to standardise all results shown and references found
-- Setting up bibliography with all references in bibtex format
+- Setting up bibliography with all references in bibtex format, most references were added using the biblio creator, however those without easily accessible dois were added with a web reference maker.
 
 
 
