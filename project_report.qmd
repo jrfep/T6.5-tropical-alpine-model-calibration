@@ -14,13 +14,14 @@ nocite: |
 In this paper, a subspace of relevant mountain ranges were analysed to find the occurrence of tropical alpine grasslands and herblands (The ecosystem labelled T6.5 from the global ecosystem typology).
 Most ranges were not confirmed to have the T6.5 ecosystem present, but did have information regarding the characteristics possessed by T6.5 ecosystems, including vegetation, soil and climate characteristics.
 Many of the areas studied showed evidence of human transformation, meaning it is unknown whether they could have a T6.5 ecosystem present. Additionally, the majority of ranges show the presence of other ecosystems within the typology, not necessarily meaning there is not also an area of the range where T6.5 may be found.
+The majority of ranges studied have more information present in papers that will require further time spent searching for relevant factors, however many do not have sufficient information present and currently accessible.
 
 
 ## Introduction
 
-- model already exixts
-- shows for each grid reference of 30x30m resolution what the probability is that each ecosystem within the typology will exist
-- checking the areas most likely to have T6.5 present based on the model to find observations of whether T6.5 is present or if it has been transformed.
+A global model to search through 30mx30m grid references, finding the probability of ecosystem presence (from the global ecosystem typology) has been created and as part of calibrating that model, locations must be tested for the presence of expected ecosystems.
+This project has focussed on Tropical Alpine Grasslands and Herblands, finding for each location any observations that exist to point towards the presence of these ecosystems, and if not then the possibility for transformation of the given areas.
+
 
 ## Methods
 
@@ -40,16 +41,6 @@ For example:
 3. The information present for the range was added to the table: 'mountain classification summary', separating into categories
 
 4. Each reference was added to the table: 'references-per-mountain', specifying the region, range, and search term used to find the source
-
-## Time spent by activity
-
-Project setup: 5 hours 
-Finding context and information: 20 hours 
-Finding relevant references: 70 hours 
-Summarising information present for each range by category: 8 hours 
-Summarising references found into a table sorted by region, range and search term: 8 hours 
-Composing project report: 15 hours 
-
 
 
 ## Results
@@ -214,31 +205,54 @@ barplot(search_reference_density$search_reference_density,
 ```
 
 
+## Time spent by activity
+
+Project setup: 5 hours  
+Finding context and information: 20 hours  
+Finding relevant references: 70 hours  
+Summarising information present for each range by category: 8 hours  
+Summarising references found into a table sorted by region, range and search term: 8 hours  
+Composing project report: 15 hours  
+
+
+## Files created
+
+For each mountain range analysed, a folder for the region was created and a markdown file for the given range was created.
+Three folders are present:
+'East African Highlands', containing a markdown file (eastern_arc_mountains) for the information found on the Eastern Arc Mountains.  
+'North African Highlands', containing markdown files (maghreb_mountains and sahara_ranges) for information found on the Maghreb Mountains and Saraha Ranges respectively.
+'Southern African Ranges', containing markdown files (central_plateau(southern_africa) and plateau_of_mozambique) for information found on the Central Plateau and Plateau of Mozambique respectively.
+An admin folder was created to store research methods and results from discussions related to the project
+A bibtex folder was created to store the reference maker in R and the references file linking to the end of this report.
+A tables folder was created to store the summary tables synthesising the information found. These tables are called mountain classification summary and references-per-mountain
+
 
 ## Progression and learnings through the project
 
 The start of the term was spent setting up software and learning how to search
 
-- At the beginning, significant context was found and explored for each reference, added to the reference document, with understanding prioritised. Each reference took roughly 1 hour to explore fully and gather valuable knowledge from
+- At the beginning, significant context was found and explored for each reference, added to the reference document, with understanding and context prioritised. Each reference took roughly 1 hour to explore fully and gather valuable knowledge from
 
-- Initially BASE, JSTOR, google scholar and CORE were used with various search terms, eventually resulting in the finding that the use of 3 search terms: "[Mountain range] Ecosystems", "[Mountain range] flora and fauna", and "[Mountain range] climate" in google scholar only was the most efficient and effective choice within the time constraints of the project.
+- Initially BASE, JSTOR, google scholar and CORE were used with various search terms, eventually resulting in the finding that 3 search terms: "[Mountain range] Ecosystems", "[Mountain range] flora and fauna", and "[Mountain range] climate" in google scholar was the most efficient and effective choice within the time constraints of the project.
 
-- This process became progressively efficient and clearer as search terms became familiar, recognising article value become clearer and the decision to separate steps into finding valuable sources and then later filtering those sources to find information within
+- This process became progressively efficient and clearer as search terms became familiar, article value become easier to recognise and the decision to separate steps into finding valuable sources and then later filtering those sources to find information within was a huge improvement on efficiency
 
-- standardising search terms and finding which were most valuable was very helpful
+- Standardising search terms and finding which were most productive was highly valuable
 
-- standardising format of documents with references found allowed for far more efficient use later in the project
+- Standardising the format of documents allowed for far more efficient use later in the project
 
-- By the end of the project sources each took about 20 minutes to confirm on average, but this was slowly reduced as the clarity for what to look for improved and familiarity improved
+- By the end of the project sources each took 20 minutes to confirm and include, as this was reduced throughout the project with clarity and familiarity improving
 
-- adding a document to summarise findings into a table was incredibly valuable (the categories to search for made deciding on article value far more efficient)
+- Adding a document to summarise findings into a table was incredibly valuable (the categories to search for made deciding on article value far more efficient)
 
-- A file to include all references in a table allowed for more effective searches as well
+- A file to include all references in a table allowed for more effective searches
 
 - Putting together results into a final report, including analysis and summary allowed findings to be clearly shown.
 
-- Cleaning all previous files to standardise all results shown and references found
+- Cleaning all previous files to standardise results and references found aided clarity
 
-- Setting up bibliography with all references in bibtex format, most references were added using the biblio creator, however those without easily accessible dois were added with a web reference maker.
+- Setting up a bibliography with all references in bibtex format, most references were added using the biblio creator, however those without easily accessible dois were added with a web reference maker.
+
+## Conclusion
 
 
