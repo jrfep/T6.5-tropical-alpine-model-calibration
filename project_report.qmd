@@ -13,30 +13,30 @@ nocite: |
 
 In this paper, a subspace of relevant mountain ranges were analysed to find the occurrence of tropical alpine grasslands and herblands (The ecosystem labelled T6.5 from the global ecosystem typology).
 Most ranges were not confirmed to have the T6.5 ecosystem present, but did have information regarding the characteristics possessed by T6.5 ecosystems, including vegetation, soil and climate characteristics.
-Many of the areas studied showed evidence of human transformation, meaning it is unknown whether they could have a T6.5 ecosystem present. Additionally, the majority of ranges show the presence of other ecosystems within the typology, not necessarily meaning there is not also an area of the range where T6.5 may be found.
-The majority of ranges studied have more information present in papers that will require further time spent searching for relevant factors, however many do not have sufficient information present and currently accessible.
+Many of the areas studied showed evidence of human transformation, meaning they are likely an invalid data point. Additionally, the majority of ranges show the presence of other ecosystems within the typology, however this does not necessarily mean T6.5 cannot be found in the range.
+The majority of ranges studied have more information present in papers that will require further time spent searching for relevant factors, however many do not have sufficient information present and currently accessible to make a valid conclusion.
 
 
 ## Introduction
 
 A global model to search through 30mx30m grid references, finding the probability of ecosystem presence (from the global ecosystem typology) has been created and as part of calibrating that model, locations must be tested for the presence of expected ecosystems.
-This project has focussed on Tropical Alpine Grasslands and Herblands, finding for each location any observations that exist to point towards the presence of these ecosystems, and if not then the possibility for transformation of the given areas.
+This project has focussed on Tropical Alpine Grasslands and Herblands, finding for each location any observations pointing towards their presence, and if not, the possibility that the given areas have been transformed (likely through human interaction).
 
 
 ## Methods
 
 
 1. A google search was made for context and general papers with accessory info
-2. Google scholar searches were made for: 
-'[mountain name] Ecosystems' 
-'[mountain name] flora and fauna' 
-'[mountain name] climate' 
+2. Google scholar searches were made for:  
+'[mountain name] Ecosystems'  
+'[mountain name] flora and fauna'  
+'[mountain name] climate'  
 
-For example:
-'High Atlas mountains' 
-'Western High Atlas Ecosystems' 
-'Western High Atlas flora and fauna' 
-'Western High Atlas climate' 
+  For example: 
+'High Atlas mountains'  
+'Western High Atlas Ecosystems'  
+'Western High Atlas flora and fauna'  
+'Western High Atlas climate'  
 
 3. The information present for the range was added to the table: 'mountain classification summary', separating into categories
 
@@ -56,7 +56,7 @@ library(DT)
 
 
 
-This opening table shows the categorised information found for each mountain range, clarifying whether relevant information was found showing either the targeted or other ecosystems, as well as some characteristics of the given ecosystem (vegetation, soil and climate). Also included is information present on transformation, as ecosystem transformation is a regular occurrence, improving search efficiency.
+This opening table shows the categorised information found for each mountain range, clarifying whether relevant information was found showing either the targeted or other ecosystems, as well as some characteristics of the given ecosystem (vegetation, soil and climate). Also included is information present on transformation, improving search efficiency and avoiding invalid results, since human impact is not a variable in the model.
 
 ```{r}
 mountain_classification <- read_csv("tables/mountain classification summary.csv", show_col_types = FALSE)
@@ -66,7 +66,7 @@ datatable(mountain_classification,
 ```
 
 
-The number of ranges found per region is shown below
+The number of ranges analysed per region is shown below
 
 ```{r}
 mountain_classification %>% 
@@ -77,8 +77,7 @@ mountain_classification %>%
 ```
 
 
-
-The information from table 1 has been synthesised below to show the presence of information relating each main ecosystem characteristic for each region.
+  The information from table 1 has been synthesised below to show the presence of information relating each main ecosystem characteristic for each region.
 
 ```{r}
 info_perc <- mountain_classification %>% 
@@ -142,7 +141,7 @@ info_perc <- mountain_classification %>%
 ```
 
 
-We can populate another table with the list of references and we can do similar summaries of nr of references per mountain range:
+The table below contains a list of references, sorted by region, range and search term.
 
 ```{r, warning=FALSE}
 mountain_references <- read_csv("tables/references-per-mountain.csv", show_col_types = FALSE)
@@ -150,7 +149,7 @@ datatable(mountain_references, caption = 'Table 3: Full list of references')
 ```
 
 
-Summarise the number of references per region 
+  The table below shows the number of references found in each given region.
 
 ```{r}
 mountain_references %>% 
@@ -161,7 +160,7 @@ mountain_references %>%
 
 
 
-Chart of the average number of references found per range for each region
+  Graph of the average number of references found per range for each region
 
 ```{r, warning=FALSE, message=FALSE}
 reference_density <- mountain_references %>%
@@ -180,7 +179,7 @@ barplot(reference_density$reference_density,
 ```
 
 
-Chart of average number of references per given search term
+Graph of average number of references per given search term
 ```{r, warning=FALSE, message=FALSE}
 
 search_reference_density <- mountain_references %>%
@@ -196,9 +195,9 @@ search_reference_density <- mountain_references %>%
 barplot(search_reference_density$search_reference_density,
         main="Graph 4: Average number of references found for each
         search term",
-        xlab="search term",
+        xlab="Search Term",
         ylab="Num references found",
-        names.arg=c("none","eco","ff","clim"))
+        names.arg=c("other","ecosystems","flora and fauna","climate"))
 
 
 
@@ -218,13 +217,13 @@ Composing project report: 15 hours
 ## Files created
 
 For each mountain range analysed, a folder for the region was created and a markdown file for the given range was created.
-Three folders are present:
-'East African Highlands', containing a markdown file (eastern_arc_mountains) for the information found on the Eastern Arc Mountains.  
-'North African Highlands', containing markdown files (maghreb_mountains and sahara_ranges) for information found on the Maghreb Mountains and Saraha Ranges respectively.
-'Southern African Ranges', containing markdown files (central_plateau(southern_africa) and plateau_of_mozambique) for information found on the Central Plateau and Plateau of Mozambique respectively.
-An admin folder was created to store research methods and results from discussions related to the project
-A bibtex folder was created to store the reference maker in R and the references file linking to the end of this report.
-A tables folder was created to store the summary tables synthesising the information found. These tables are called mountain classification summary and references-per-mountain
+Three folders are present:  
+'East African Highlands', containing a markdown file (eastern_arc_mountains) for the information found on the Eastern Arc Mountains.    
+'North African Highlands', containing markdown files (maghreb_mountains and sahara_ranges) for information found on the Maghreb Mountains and Saraha Ranges respectively.  
+'Southern African Ranges', containing markdown files (central_plateau(southern_africa) and plateau_of_mozambique) for information found on the Central Plateau and Plateau of Mozambique respectively.  
+An admin folder was created to store research methods and results from discussions related to the project  
+A bibtex folder was created to store the reference maker in R and the references file linking to the end of this report.  
+A tables folder was created to store the summary tables synthesising the information found. These tables are called mountain classification summary and references-per-mountain  
 
 
 ## Progression and learnings through the project
@@ -255,4 +254,4 @@ The start of the term was spent setting up software and learning how to search
 
 ## Conclusion
 
-
+Many ranges were found to potentially contain T6.5 ecosystems, however there were very few with guaranteed observations. Many of the ranges have evidence for transformation and many have evidence for other ecosystems present. More research is needed to find complete results to allow for model calibration.
