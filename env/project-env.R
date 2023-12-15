@@ -12,7 +12,7 @@ if (Sys.getenv("GISDATA") != "") {
   hostname <- out[["nodename"]]
   script.dir <- sprintf("%s/%s/%s",Sys.getenv("HOME"), projectdir, projectname)
   switch(hostname,
-         terra={
+         gaia={
            gis.data <- sprintf("/opt/gisdata/")
            work.dir <- sprintf("%s/tmp/%s",Sys.getenv("HOME"),projectname)
          },
@@ -20,7 +20,7 @@ if (Sys.getenv("GISDATA") != "") {
            gis.data <- sprintf("%s/gisdata/",Sys.getenv("HOME"))
            work.dir <- sprintf("%s/tmp/%s",Sys.getenv("HOME"),projectname)
          },
-         L-T14N5WR66Q.local={
+         `L-T14N5WR66Q.local`={
            gis.data <- sprintf("%s/gisdata/",Sys.getenv("HOME"))
            work.dir <- sprintf("%s/sandbox/",script.dir)
          },
