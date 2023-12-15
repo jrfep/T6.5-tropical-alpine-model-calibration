@@ -4,7 +4,7 @@ author: "J. Maisel"
 date: "17 Nov 2023"
 format: html
 bibliography: 
-  - bibTeX/references.bib
+  - bibtex/references.bib
 nocite: |
   @*
 ---
