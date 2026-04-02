@@ -30,14 +30,15 @@ records_file <- here::here("data","EFG-records-GMBA.rds")
 EFG_records <- readRDS(file=records_file) 
 GMBA <- read_sf(here::here("data","GMBA_inventory_valid.gpkg")) %>%
   filter(MapUnit %in% "Basic") %>%
-  filter(Level_01 %in% "Africa",Level_03 %in% EFG_records$GMBA_group) 
+  # filter(Level_01 %in% "Africa",Level_03 %in% EFG_records$GMBA_group) 
+  filter(Level_01 %in% "South America",Level_03 %in% EFG_records$GMBA_group) 
 ```
 
 # Mountains of Africa
 Select the region of interest in order to update the map, table and plots.
 ```{r}
 
-regs <- c("Southern Rift Mountains", "Atlantic Plateau (Brazil)", "Hawaian Islands")
+# regs <- c("Southern Rift Mountains", "Atlantic Plateau (Brazil)", "Hawaian Islands")
 regs <- GMBA %>% st_drop_geometry() %>% distinct(Level_03) %>% pull
 selectInput('xreg', 'Select the region of interest', regs)
 ```
